@@ -10,6 +10,9 @@ static const Block blocks[] = {
 
 	{"🌡", "sensors | awk '/^temp1:/{print $2}'",				5,		0},
 
+	/* battery status */
+	{"🔋", "~/.local/bin/get_power_supply",					5,		0},
+
 	/*{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},*/
 	{"", "date +'%F (%a) %R'",						5,		0},
 };
