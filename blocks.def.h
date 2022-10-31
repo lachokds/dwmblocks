@@ -8,7 +8,7 @@ static const Block blocks[] = {
 	/* Get weather forecast for current location */
 	{"", "~/.local/bin/get_forecast",					3600,		0},
 
-	{"🌡", "sensors | awk '/^temp1:/{print $2}'",				5,		0},
+	{"🌡", "sensors | awk '/^CPU:/{print $2}'",				5,		0},
 
 	/* battery status */
 	{"", "~/.local/bin/get_power_supply",					5,		0},
